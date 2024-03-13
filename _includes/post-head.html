@@ -1,0 +1,14 @@
+
+
+{% for tag in include.tags %}
+{% include topic-link.html topic=tag %}
+{% endfor %}
+
+<h2>{{ include.title }}</h2>
+<i>{{ include.date | date_to_string }}</i>
+
+
+
+
+
+

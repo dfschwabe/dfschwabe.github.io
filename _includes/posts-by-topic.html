@@ -1,0 +1,7 @@
+{% for tag in site.tags %}
+{% if tag[0] == include.topic %}
+{% for post in tag[1] %}
+{% include post-link.html post=post %}
+{% endfor %}
+{% endif %}
+{% endfor %}
